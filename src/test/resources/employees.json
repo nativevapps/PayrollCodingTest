@@ -1,0 +1,73 @@
+{
+  "total_items": 10,
+  "page": 1,
+  "page_size": 30,
+  "items": [
+    {
+      "first_name": "Joan",
+      "last_name": "Smith",
+      "section": "Sales",
+      "currency": "USD",
+      "salary": {
+        "currency": "GBP",
+        "amount": 35000.00,
+        "display_amount": "GBP 35,000.00"
+      }
+    },
+    {
+      "first_name": "Dan",
+      "last_name": "White",
+      "section": "Administration",
+      "currency": "GBP",
+      "salary": {
+        "currency": "GBP",
+        "amount": 25000.00,
+        "display_amount": "GBP 25,000.00"
+      }
+    },
+    {
+      "first_name": "Billy",
+      "last_name": "Davis",
+      "section": "Warehouse",
+      "currency": "GBP",
+      "salary": {
+        "currency": "GBP",
+        "amount": 15000.00,
+        "display_amount": "GBP 15,000.00"
+      }
+    },
+    {
+      "first_name": "Jenny",
+      "last_name": "Black",
+      "section": "Logistics",
+      "currency": "GBP",
+      "salary": {
+        "currency": "GBP",
+        "amount": 15000.00,
+        "display_amount": "GBP 15,000.00"
+      }
+    },
+    {
+      "first_name": "Peter",
+      "last_name": "Brown",
+      "section": "Sales",
+      "currency": "AUD",
+      "salary": {
+        "currency": "GBP",
+        "amount": 35000.00,
+        "display_amount": "GBP 35,000.00"
+      }
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Day",
+      "section": "Sales",
+      "currency": "CHF",
+      "salary": {
+        "currency": "GBP",
+        "amount": 40000.00,
+        "display_amount": "GBP 40,000.00"
+      }
+    }
+  ]
+}
