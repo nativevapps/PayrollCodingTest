@@ -9,42 +9,42 @@
       "section": "Sales",
       "currency": "USD",
       "salary": {
-        "currency": "GBP",
+        "currency": "AUD",
         "amount": 35000.00,
-        "display_amount": "GBP 35,000.00"
+        "display_amount": "AUD 35,000.00"
       }
     },
     {
       "first_name": "Dan",
       "last_name": "White",
       "section": "Administration",
-      "currency": "GBP",
+      "currency": "AUD",
       "salary": {
-        "currency": "GBP",
+        "currency": "AUD",
         "amount": 25000.00,
-        "display_amount": "GBP 25,000.00"
+        "display_amount": "AUD 25,000.00"
       }
     },
     {
       "first_name": "Billy",
       "last_name": "Davis",
       "section": "Warehouse",
-      "currency": "GBP",
+      "currency": "AUD",
       "salary": {
-        "currency": "GBP",
+        "currency": "AUD",
         "amount": 15000.00,
-        "display_amount": "GBP 15,000.00"
+        "display_amount": "AUD 15,000.00"
       }
     },
     {
       "first_name": "Jenny",
       "last_name": "Black",
       "section": "Logistics",
-      "currency": "GBP",
+      "currency": "AUD",
       "salary": {
-        "currency": "GBP",
+        "currency": "AUD",
         "amount": 15000.00,
-        "display_amount": "GBP 15,000.00"
+        "display_amount": "AUD  15,000.00"
       }
     },
     {
@@ -53,16 +53,16 @@
       "section": "Sales",
       "currency": "AUD",
       "salary": {
-        "currency": "GBP",
+        "currency": "AUD",
         "amount": 35000.00,
-        "display_amount": "GBP 35,000.00"
+        "display_amount": "AUD 35,000.00"
       }
     },
     {
       "first_name": "Mary",
       "last_name": "Day",
       "section": "Sales",
-      "currency": "CHF",
+      "currency": "SGD",
       "salary": {
         "currency": "GBP",
         "amount": 40000.00,
