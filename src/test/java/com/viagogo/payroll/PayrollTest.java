@@ -37,6 +37,10 @@ public class PayrollTest {
         List<Salary> salaries = payroll.getPayroll(INPUT_FILE);
         assertNotNull(salaries);
         assertEquals(6, salaries.size());
+
+        for (Salary salary : salaries) {
+            System.out.println(salary.toString());
+        }
     }
 
     private static String readJSON(String path) {
