@@ -1,5 +1,5 @@
 {
-  "total_items": 10,
+  "total_items": 4,
   "page": 1,
   "page_size": 30,
   "items": [
@@ -9,15 +9,15 @@
     },
     {
       "currency": "GBP",
-      "rate": 0.58903
+      "rate": 1.69303
     },
     {
       "currency": "SGD",
-      "rate": 1.04623
+      "rate": 0.957206
     },
     {
       "currency": "USD",
-      "rate": 0.76704
+      "rate": 1.30470
     }
   ]
 }
