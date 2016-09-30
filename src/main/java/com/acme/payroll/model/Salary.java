@@ -1,4 +1,4 @@
-package com.viagogo.payroll.model;
+package com.acme.payroll.model;
 
 public class Salary {
 

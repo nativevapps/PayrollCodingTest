@@ -1,6 +1,6 @@
-package com.viagogo.payroll;
+package com.acme.payroll;
 
-import com.viagogo.payroll.model.Salary;
+import com.acme.payroll.model.Salary;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.viagogo.payroll;
+package com.acme.payroll;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

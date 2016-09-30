@@ -1,13 +1,13 @@
-package com.viagogo.payroll;
+package com.acme.payroll;
 
-import com.viagogo.payroll.model.Salary;
+import com.acme.payroll.model.Salary;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
 
-import static com.viagogo.payroll.TestUtils.inputStreamToString;
+import static com.acme.payroll.TestUtils.inputStreamToString;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

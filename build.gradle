@@ -1,4 +1,4 @@
-group 'com.viagogo'
+group 'com.acme'
 version '1.0-SNAPSHOT'
 
 buildscript {
