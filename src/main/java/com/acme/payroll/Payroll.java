@@ -8,7 +8,7 @@ import java.util.List;
 public class Payroll {
 
     public List<Salary> getPayroll(String inputData) {
-        List<Salary> salaries = new ArrayList<Salary>();
+        List<Salary> salaries = new ArrayList<>();
 
         return salaries;
     }
