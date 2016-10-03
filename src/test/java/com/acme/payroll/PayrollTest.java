@@ -1,26 +1,37 @@
 package com.acme.payroll;
 
+import com.acme.payroll.external.JsonFileInput;
+import com.acme.payroll.external.Output;
 import com.acme.payroll.model.Salary;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
+import org.mockito.MockitoAnnotations;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import static com.acme.payroll.test.TestUtils.inputStreamToString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static com.acme.payroll.utils.JsonUtils.inputStreamToString;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 public class PayrollTest {
 
     private static final String INPUT_FILE = readJSON("/employees.json");
 
     private Payroll payroll;
+    private Output mockOutput;
+
+    @Captor
+    ArgumentCaptor<ArrayList<Salary>> captor;
 
     @Before
     public void setup() {
-        payroll =  new Payroll();
+        MockitoAnnotations.initMocks(this);
+        payroll = new Payroll();
+        mockOutput = mock(Output.class);
     }
 
     @After
@@ -33,8 +44,13 @@ public class PayrollTest {
         assertTrue(INPUT_FILE.contains("Mary"));
     }
 
-    @Test public void testPayrollAcceptance() {
-        List<Salary> salaries = payroll.getPayroll(INPUT_FILE);
+    @Test
+    public void testPayrollAcceptance() {
+        payroll.getPayroll(new JsonFileInput(), mockOutput);
+
+        verify(mockOutput, timeout(300)).presentPayroll(captor.capture());
+
+        List<Salary> salaries = captor.getAllValues().get(0);
         assertNotNull(salaries);
         assertEquals(6, salaries.size());
 

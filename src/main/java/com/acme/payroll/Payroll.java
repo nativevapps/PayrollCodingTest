@@ -1,15 +1,11 @@
 package com.acme.payroll;
 
-import com.acme.payroll.model.Salary;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.acme.payroll.external.Input;
+import com.acme.payroll.external.Output;
 
 public class Payroll {
 
-    public List<Salary> getPayroll(String inputData) {
-        List<Salary> salaries = new ArrayList<>();
+    public void getPayroll(Input input, Output output) {
 
-        return salaries;
     }
 }
