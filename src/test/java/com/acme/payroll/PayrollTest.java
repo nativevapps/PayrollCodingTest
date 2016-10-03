@@ -40,6 +40,28 @@ public class PayrollTest {
 
         for (Salary salary : salaries) {
             System.out.println(salary.toString());
+            validateOutput(salary);
+        }
+    }
+
+    private void validateOutput(Salary salary) {
+        if (salary.name.contains("Joan")) {
+            assertEquals("USD 2235.51", salary.monthlySalary);
+        }
+        if (salary.name.contains("Dan")) {
+            assertEquals("AUD 2083.33'", salary.monthlySalary);
+        }
+        if (salary.name.contains("Billy")) {
+            assertEquals("USD 2235.51", salary.monthlySalary);
+        }
+        if (salary.name.contains("Jenny")) {
+            assertEquals("AUD 1250.00", salary.monthlySalary);
+        }
+        if (salary.name.contains("Jenny")) {
+            assertEquals("AUD 1250.00", salary.monthlySalary);
+        }
+        if (salary.name.contains("Mary")) {
+            assertEquals("SGD 3482.35'", salary.monthlySalary);
         }
     }
 
