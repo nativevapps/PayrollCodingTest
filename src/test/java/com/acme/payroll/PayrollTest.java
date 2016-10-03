@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static com.acme.payroll.TestUtils.inputStreamToString;
+import static com.acme.payroll.test.TestUtils.inputStreamToString;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -49,19 +49,19 @@ public class PayrollTest {
             assertEquals("USD 2235.51", salary.monthlySalary);
         }
         if (salary.name.contains("Dan")) {
-            assertEquals("AUD 2083.33'", salary.monthlySalary);
+            assertEquals("AUD 2083.33", salary.monthlySalary);
         }
         if (salary.name.contains("Billy")) {
-            assertEquals("USD 2235.51", salary.monthlySalary);
-        }
-        if (salary.name.contains("Jenny")) {
             assertEquals("AUD 1250.00", salary.monthlySalary);
         }
         if (salary.name.contains("Jenny")) {
             assertEquals("AUD 1250.00", salary.monthlySalary);
+        }
+        if (salary.name.contains("Peter")) {
+            assertEquals("AUD 2916.67", salary.monthlySalary);
         }
         if (salary.name.contains("Mary")) {
-            assertEquals("SGD 3482.35'", salary.monthlySalary);
+            assertEquals("SGD 3482.35", salary.monthlySalary);
         }
     }
 

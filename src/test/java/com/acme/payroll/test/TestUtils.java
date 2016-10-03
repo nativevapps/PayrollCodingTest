@@ -1,10 +1,10 @@
-package com.acme.payroll;
+package com.acme.payroll.test;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-class TestUtils {
+public class TestUtils {
 
     private static final String DEFAULT_CHARSET = "UTF-8";
 
@@ -12,7 +12,7 @@ class TestUtils {
         super();
     }
 
-    static String inputStreamToString(InputStream inputStream) {
+    public static String inputStreamToString(InputStream inputStream) {
         return inputStreamToString(inputStream, DEFAULT_CHARSET);
     }
 
