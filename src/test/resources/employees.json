@@ -64,9 +64,9 @@
       "section": "Sales",
       "currency": "SGD",
       "salary": {
-        "currency": "GBP",
+        "currency": "AUD",
         "amount": 40000.00,
-        "display_amount": "GBP 40,000.00"
+        "display_amount": "AUD 40,000.00"
       }
     }
   ]
