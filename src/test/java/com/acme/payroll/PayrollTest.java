@@ -77,7 +77,7 @@ public class PayrollTest {
             assertEquals("AUD 2916.67", salary.monthlySalary);
         }
         if (salary.name.contains("Mary")) {
-            assertEquals("SGD 3482.35", salary.monthlySalary);
+            assertEquals("SGD 3482.36", salary.monthlySalary);
         }
     }
 
