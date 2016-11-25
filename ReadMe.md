@@ -4,6 +4,8 @@ This is the remote coding challenge for engineering candidates coded using plain
 
 **First and foremost the solution must satisfy the acceptance test defined in the `PayrollTest` file.**
 
+**This exercise does not require an Android application.**
+
 ####The Problem:
 You are given a list of employees (`employees.json`), there positions within the company, annual salary in AUD, and their required payment currency. Your job is to write the code that will take this information and output a list of employee names and their monthly payment (calculated in their required currency). 
 
