@@ -2,7 +2,7 @@ package com.acme.payroll;
 
 import com.acme.payroll.external.JsonFileInput;
 import com.acme.payroll.external.Output;
-import com.acme.payroll.model.Salary;
+import com.acme.payroll.model.EmployeePayment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,7 +25,7 @@ public class PayrollTest {
     private Output mockOutput;
 
     @Captor
-    ArgumentCaptor<ArrayList<Salary>> captor;
+    ArgumentCaptor<ArrayList<EmployeePayment>> captor;
 
     @Before
     public void setup() {
@@ -50,34 +50,34 @@ public class PayrollTest {
 
         verify(mockOutput, timeout(300)).presentPayroll(captor.capture());
 
-        List<Salary> salaries = captor.getAllValues().get(0);
+        List<EmployeePayment> salaries = captor.getAllValues().get(0);
         assertNotNull(salaries);
         assertEquals(6, salaries.size());
 
-        for (Salary salary : salaries) {
-            System.out.println(salary.toString());
-            validateOutput(salary);
+        for (EmployeePayment employeePayment : salaries) {
+            System.out.println(employeePayment.toString());
+            validateOutput(employeePayment);
         }
     }
 
-    private void validateOutput(Salary salary) {
-        if (salary.name.contains("Joan")) {
-            assertEquals("USD 2235.51", salary.monthlySalary);
+    private void validateOutput(EmployeePayment employeePayment) {
+        if (employeePayment.fullName.contains("Joan")) {
+            assertEquals("USD 2235.51", employeePayment.displayAmount);
         }
-        if (salary.name.contains("Dan")) {
-            assertEquals("AUD 2083.33", salary.monthlySalary);
+        if (employeePayment.fullName.contains("Dan")) {
+            assertEquals("AUD 2083.33", employeePayment.displayAmount);
         }
-        if (salary.name.contains("Billy")) {
-            assertEquals("AUD 1250.00", salary.monthlySalary);
+        if (employeePayment.fullName.contains("Billy")) {
+            assertEquals("AUD 1250.00", employeePayment.displayAmount);
         }
-        if (salary.name.contains("Jenny")) {
-            assertEquals("AUD 1250.00", salary.monthlySalary);
+        if (employeePayment.fullName.contains("Jenny")) {
+            assertEquals("AUD 1250.00", employeePayment.displayAmount);
         }
-        if (salary.name.contains("Peter")) {
-            assertEquals("AUD 2916.67", salary.monthlySalary);
+        if (employeePayment.fullName.contains("Peter")) {
+            assertEquals("AUD 2916.67", employeePayment.displayAmount);
         }
-        if (salary.name.contains("Mary")) {
-            assertEquals("SGD 3482.36", salary.monthlySalary);
+        if (employeePayment.fullName.contains("Mary")) {
+            assertEquals("SGD 3482.36", employeePayment.displayAmount);
         }
     }
 
